@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------My CSS----------------- */
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 80px;
+  justify-content: center;
+  align-content: space-between;
+  font-family: arial, sans-serif;
+
+  font-size: 13px;
+}
+
+/* ----------------HEADER----------------- */
+
+header {
+  height: 50px;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li a {
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-block;
+  line-height: 24px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.apps {
+  background-image: url(https://ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+  background-position-x: -132px;
+  background-position-y: -38px;
+  background-size: 528px 68px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 30px;
+  opacity: 0.55;
+  width: 30px;
+}
+
+.sign-in {
+  border: 1px solid rgb(66, 133, 244);
+  background-color: rgb(66, 133, 244);
+  width: 70px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+/* ----------------MAIN----------------- */
+main {
+  /* background-color: rgb(233, 110, 110); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 400px;
+}
+
+main img {
+  margin-bottom: 40px;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="search"] {
+  width: 484px;
+  height: 44px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+input[type="search"]:focus,
+input[type="search"]:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+input[type="submit"] {
+  margin: 30px 2px;
+  padding: 0 16px;
+  height: 36px;
+
+  color: #757575;
+  background-color: #f2f2f2;
+
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+input[type="submit"]:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+/* ----------------FOOTER----------------- */
+
+footer div,
+footer ul {
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0 27px;
+  margin: 0;
+  font-size: 15px;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+
+footer li {
+  display: inline;
+}
+
+footer li:nth-child(n + 4) {
+  float: right;
+}
+
+footer a {
+  color: #666;
+  font-size: 13px;
+  margin: auto 20px auto auto;
+}
+
+footer a:active {
+  color: #dd4b39;
+}
+
+footer ul li:nth-child(4) a {
+  margin-right: 0;
+}
